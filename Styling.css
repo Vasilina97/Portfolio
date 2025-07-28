@@ -1,0 +1,46 @@
+.portfolio {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.toolbar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.toolbar button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.toolbar button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.category {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
