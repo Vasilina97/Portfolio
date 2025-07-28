@@ -1,0 +1,28 @@
+.toolbar {
+  margin: 20px;
+  text-align: center;
+}
+
+.toolbar button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.toolbar button.active {
+  background: #000;
+  color: #fff;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
