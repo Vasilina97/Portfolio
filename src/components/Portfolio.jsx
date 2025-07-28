@@ -27,13 +27,11 @@ class Portfolio extends React.Component {
     this.setState({ selected: filter });
   };
 
-  getFilteredProjects() {
-    if (this.state.selected === 'All') {
-      return this.state.projects;
-    }
-    return this.state.projects.filter(
-      (project) => project.category === this.state.selected
-    );
+  getFilteredProjects = () => {
+    const { selected, projects } = this.state;
+    return selected === "All" 
+      ? projects 
+      : projects.filter(project => project.category === selected);
   }
 
   render() {
@@ -44,7 +42,7 @@ class Portfolio extends React.Component {
           selected={this.state.selected}
           onSelectFilter={this.onSelectFilter}
         />
-        <ProjectList projects={this.getFilteredProjects()} />
+        <ProjectList projects={this.getFilteredProjects()}  />
       </div>
     );
   }
